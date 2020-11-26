@@ -1,4 +1,6 @@
 # This file lists all individuals having contributed content to the repository.
+# For how it is generated, see ``hack/generate-authors.sh` on Moby´s repository.
+# https://github.com/moby/moby/blob/master/hack/generate-authors.sh
 
-Oscar Andres Sotelo Duran <andresotelo2020@gmail.com>
-Leonardo Valencia Santana <leovalenciasantana@gmail.com>
+4ions <leovalenciasantana@gmail.com>
+ANDRESOTELO <andresotelo2020@gmail.com>
