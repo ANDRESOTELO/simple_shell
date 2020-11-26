@@ -10,7 +10,6 @@
 - command interpreter (shell)
 
 
-
 .SH SYNOPSIS
 
 Simple shell is a program to read the different commands that are entered into a normal shell, this simple shell is compiled with the most common flags and warnings, which are
