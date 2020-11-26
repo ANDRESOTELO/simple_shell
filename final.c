@@ -91,9 +91,9 @@ char *_hack_path(char *path)
 	char *path_cpy = NULL;
 	int i = 0;
 
-	path_cpy = _strdup(path); /*Duplico el path en otra variable*/
+	path_cpy = _strdup(path);
 
-	for (; path[i] != '\0'; i++) /*Para saber el length de Path*/
+	for (; path[i] != '\0'; i++)
 	;
 	path2 = malloc(sizeof(char) * i + 2);
 	if (!path2)

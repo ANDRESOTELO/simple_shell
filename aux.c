@@ -58,15 +58,15 @@ char *_string_directory(char **argv)
 	int i = 0, j = 0, k = 0;
 	char **token_path = NULL, *p = NULL, *path = NULL;
 
-	path = _getenv("PATH"); /*string de directorios*/
-
+	path = _getenv("PATH");
+	if (path == NULL)
+		return (0); /*Otro cambio*/
 	if (path[0] == ':')
 		path = _hack_path(path);
 
-	token_path = _split_string(path, ":"); /*tokens del path*/
-
+	token_path = _split_string(path, ":");
 	i = 0;
-	while (token_path[i]) /*recorre cada uno de los tokens*/
+	while (token_path[i])
 	{
 		for (j = 0; token_path[i][j]; j++)
 		;

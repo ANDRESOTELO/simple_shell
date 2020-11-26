@@ -31,9 +31,10 @@ int main(int ac, char *argv[])
 	{
 		if (r_bytes != 1) /*enter line*/
 		{
+			buffer[r_bytes - 1] = '\0';
 			if (_print_env(buffer) == -1)
 			{
-				buffer[r_bytes - 1] = '\0';
+				
 				if (_strcmp(buffer, xclose[0]) == 0)
 					free(buffer), exit(0);
 
