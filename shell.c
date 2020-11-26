@@ -26,7 +26,6 @@ int main(int ac, char *argv[])
 			buffer[r_bytes - 1] = '\0';
 			if (_print_env(buffer) == -1)
 			{
-				
 				if (_strcmp(buffer, xclose[0]) == 0)
 					free(buffer), exit(0);
 
