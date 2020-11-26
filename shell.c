@@ -1,17 +1,9 @@
-#include "header.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <sys/wait.h>
-#include <string.h>
-#include <sys/stat.h>
-#include <signal.h>
-#include <sys/types.h>
+#include "soleo.h"
 
 /**
- * main - super minishel ♥.
+ * main - Entry point of simple_shell
  * @ac: arguments count.
- * @argv: arguments.
+ * @argv: arguments value
  * Return: Always return 0.
  */
 
