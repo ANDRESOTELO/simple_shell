@@ -1,0 +1,141 @@
+.\" Soleo man page
+.\"
+.TH SIMPLE_SHELL 1 "26 November 2020" "0.1" "Holberton School"
+
+
+
+.SH NAME
+
+.B simple_shell (hsh)
+- command interpreter (shell)
+
+
+
+.SH SYNOPSIS
+
+Simple shell is a program to read the different commands that are entered into a normal shell, this simple shell is compiled with the most common flags and warnings, which are
+
+.B       gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+and then you need to execute the generated file with the name of the established output
+
+.B      ./hsh
+
+
+
+
+.SH DESCRIPTION
+
+The simple shell reads user-generated commands, the simple shell can be executed in two ways, either the interactive or the non-interactive way. The commands written by the user are searched in the operating system and defined in the PATH variable, which contains all the information about the environment variables.
+
+When an error occurs, the program is terminated and an exit value is displayed in the shell informing about the last command executed, if the command is written correctly, the return will be zero (0).
+
+Translated with www.DeepL.com/Translator (free version)
+
+.SH INVOCATION
+
+Compile the simple_shell with de GNU Compiler Collections and all the flags comments beside.
+
+This is an example of test:
+.P
+.RS
+.B $ echo 'ls' | ./hsh
+.P
+.RE
+Or:
+.P
+.RS
+.B $ cat aFile | ./hsh
+.P
+.RE
+
+.SH GENERALS EXAMPLES
+
+$ ls
+
+test1 test2 directoty1 test3
+
+$ ls -l
+
+-rw-rw-r-- 1 vagrant vagrant  1293 Nov 25 02:01 test1
+
+-rw-rw-r-- 1 vagrant vagrant  4768 Nov 23 23:01 test2
+
+drwxrwxr-x 2 vagrant vagrant  4096 Nov 21 14:48 directoty1
+
+drwxrwxr-x 2 vagrant vagrant  4126 Nov 21 11:21 test3
+
+$ echo HelloWorld
+
+HelloWorld
+
+$ env
+
+USER=vagrant
+
+LANGUAGE=en_US
+
+SESSION=ubuntu
+
+COMPIZ_CONFIG_PROFILE=ubuntu
+
+SHLVL=1
+
+HOME=/home/vagrant
+
+DESKTOP_SESSION=ubuntu
+
+LOGNAME=vagrant
+
+TERM=xterm-256color
+
+PATH=/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
+
+DISPLAY=:0
+
+$ exit
+
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$
+
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ echo "ls -l" | ./hsh
+
+-rw-rw-r-- 1 vagrant vagrant  1293 Nov 25 02:01 test1
+
+-rw-rw-r-- 1 vagrant vagrant  4768 Nov 23 23:01 test2
+
+drwxrwxr-x 2 vagrant vagrant  4096 Nov 21 14:48 directoy1
+
+drwxrwxr-x 2 vagrant vagrant  4126 Nov 21 11:21 test3
+
+
+.SS BUILT-IN COMMANDS
+
+.RS
+This secion has information on the included builtin commands with Soleo
+
+.Bl -tag -width "PAGEIN" -compact -offset indent
+
+.It
+.B env
+- writes environment to stdout
+
+.IT
+.B exit
+- exits Soleo
+
+
+.SH "SEE ALSO"
+
+.BR sh (1),
+.BR bash (1),
+
+
+.SH BUGS
+
+None for the moment.
+
+.SH AUTHOR
+
+Oscar Andres Sotelo Duran <andresotelo2020@gmail.com>
+
+Leonardo Valencia Santana <leovalenciasantana@gmail.com>
