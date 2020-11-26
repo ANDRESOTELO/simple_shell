@@ -53,12 +53,12 @@ Run ls program in Soleo
     Soleo $:ls
     README.md soleo.h sfree.c mini_shell.c soleo
     split_string.c
-    Soleo $: 
+    Soleo $:
 
 ## Authors
 - Leonardo Valencia [GitHub: @4ions](https://github.com/4ions)
 - Andrés Sotelo [GitHub: @ANDRESOTELO](https://github.com/ANDRESOTELO)
- 
+
 ## Holberton School Data-Time
 - November 26 - 2020
 - Cohort 13
